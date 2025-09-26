@@ -7,6 +7,7 @@ class Student {
   final String cin;
   final String qrCode;
   final String NINSCRI ;
+  double? note; 
 
   Student({
     required this.id,
@@ -17,6 +18,8 @@ class Student {
     required this.cin,
     required this.qrCode,
     required this.NINSCRI,
+    this.note, // Ajouté ici
+
   });
 
   factory Student.fromJson(Map<String, dynamic> json) {
@@ -27,7 +30,7 @@ class Student {
       firstName: json['first_name']?.toString() ?? '',
       lastName: json['last_name']?.toString() ?? '',
       cin: json['cin']?.toString() ?? '',
-NINSCRI: json['numero_inscri']?.toString() ?? '',
+      NINSCRI: json['numero_inscri']?.toString() ?? '',
       qrCode: json['qrcode']?.toString() ?? '',
     );
   }

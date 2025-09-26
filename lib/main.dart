@@ -4,7 +4,6 @@ import 'auth/Login.dart';
 import 'auth/Register.dart';
 import 'ExcelDisplayScreen.dart';
 
-
 void main() {
   runApp(const MyApp());
 }
@@ -23,10 +22,9 @@ class MyApp extends StatelessWidget {
       routes: {
         '/login': (context) => const Login(),
         '/register': (context) => const Register(),
-        '/home': (context) => const Home(), 
+        '/home': (context) => const Home(),
         '/excelDisplay': (context) => ExcelDisplayScreen(),
       },
     );
   }
 }
-
